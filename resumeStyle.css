@@ -1,0 +1,116 @@
+	body { 
+		  display: grid;
+		  grid-template-areas: 
+			"header header header"
+			"nav article ads"
+			"footer footer footer";
+		  grid-template-rows: 90px 1fr 50px;
+		  grid-template-columns: 150px 1fr 150px;
+		  grid-gap: 18px;
+		  height: 120vh;
+		  margin: 10px;
+		  }
+		#pageHeader {
+		  grid-area: header;
+		  background-color:lavender;
+		  height:80px;
+		  padding:0px;
+		  font-size:15px;
+		  height:100px;
+		  color:#630bb5;
+		}
+		#pageFooter {
+		  grid-area: footer;
+		  background-color:lavender;
+		}
+		#mainArticle { 
+		  grid-area: article;
+		  background-color:whtie;
+		  background-image:url("WM3.png");
+		  Background-repeat:no-repeat;
+		  background-position:center;
+		 
+		  
+		  }
+		#mainNav { 
+		  grid-area: nav; 
+		  background-color:lavender;
+		  }
+		#siteAds { 
+		  grid-area: ads; 
+		  background-color:lavender;
+		  }
+		header, footer, article, nav, div {
+		  padding: 10px;
+		}
+		
+		.vertical-menu{
+			width:120px;
+		}
+		
+		.vertical-menu a{
+			background-color:#ccc;
+			Color:#630bb5;
+			display:block;
+			padding:12px;
+			text-decoration:underline;
+			font-size:13px;
+		}
+		.vertical-menu a:hover{
+			background-color:white;
+			font-size:15px;
+		}
+		.vertical-menu a:visited{
+			font-size:13px;
+			color:#482087;
+		}
+		
+		.horizontal-list{
+			list-style-type:none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #ccc;
+		}
+		
+		.horizontal-list a{
+			float: left;
+			padding-left:10px;
+			padding-right:10px;
+			Padding-top:0px;
+			Padding-bottom:0px;
+		    display: block;
+		    color: #630bb5;
+		    text-align: center;
+		    text-decoration: none;
+		    position:relative;
+		    left:39%;
+		  }
+
+		.horizontal-list a:hover {
+		  background-color:white;
+		  font-size:15px;
+		}
+		
+		.horizontal-list a:visited {
+		    font-size:13px;
+			color:#482087;
+		}
+		
+		.list{
+			display:block;
+			color:#630bb5;
+			text-decoration:none;
+			padding:5px;
+			background-color:#ccc;
+		}
+		
+		.list ul{
+			list-style-type:none;
+			Margin:0px;
+			Padding:12px;
+		}
+		
+		h1, h3, h4, hr, b, h5, i{
+				color: #630bb5;
+		}
